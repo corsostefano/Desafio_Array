@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--boostrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--css-->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--title-->
+    <title>Listado de Productos</title>
+</head>
+<body>
+    <div class="container text-center py-5">
+        <div class="row">
+            <div class="col-12">
+               <h1>Ingrese Productos</h1>
+               <form action="">
+                   <div class="secciones">
+                    <input id="nombre" type="text" placeholder="Ingresa producto" class="form-control my-2 ingresar">
+                   </div>
+                   <div class="secciones">
+                    <input id="precio" type="number" placeholder="Ingresa precio" class="form-control my-2 ingresar">
+                   </div>
+                   <div class="secciones">
+                    <input id="departamento" type="text" placeholder="Ingresa departamento" class="form-control my-2 ingresar">
+                   </div>
+                   <button id="boton" class="btn btn-sucess boton" type="reset" onclick="capturar();"> Agregar</button>
+               </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-auto text-center">
+                <table class="table" id="tabla">
+                    <thead class="thead-inverse">
+                        <tr>
+                            <td>PRODUCTO</td>
+                            <td>PRECIO</td>
+                            <td>DEPARTAMENTO</td>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./js/bootstrap.js"></script> 
+    <script src="script.js"></script>
+</body>
+</html>
